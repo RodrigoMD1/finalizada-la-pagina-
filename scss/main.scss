@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    min-height: 1000px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    
+}
+
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #f11515;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 0;
+    padding-right: 20px;
+
+}
+
+header a{
+    padding: 25px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #f11515;
+}
+
+/* 
+header{
+   position: fixed;
+   top: 0; 
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 40px 100px;
+   z-index: 1000;
+   transition: 0.6s;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+    border-bottom: 1px solid (0,0,0,.1);
+
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 300;
+    transition: 0.6s;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+*/
+
+
+
+
+
+
+
+.banner{
+    position: static;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/fondo2.jpg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2{
+    color:#fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
+}
+.banner h2 span{
+    color: #f11515;
+}
+
+.sec {
+    background: #fff;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .content{
+    position: static;
+    text-align: center;
+    width: 100%;
+}
+.mxw800p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.h3General{
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 10px;
+
+}
+
+p{
+    position: static;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.btn{
+    position: static;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+.services{
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.services .box{
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow:  0 15px 30px rgba(0,0,0,0.05);
+}
+
+.services .box .iconBx{
+    margin-top: 25px;
+}
+.services .box .iconBx img {
+    max-width: 70px;
+    margin-bottom: 15px;
+}
+
+.services .box h2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.stats{
+    background: #000;
+    padding-top: 250px;
+    margin-top: -250px;
+}
+
+.stats h3,
+.stats p{
+
+    color: #fff;
+}
+
+.statsBox{
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.statsBox h2{
+    color: #fff;
+    font-size: 36px;
+}
+.statsBox h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.workBx{
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+.workBx .brand{
+    
+    position: static;
+    background: #f11515;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workBx .brand:hover{
+    background: #000;
+
+}
+
+.workBx .brand a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+
+}
+.workBx .brand:hover a{
+    color: rgba(255,255,255,1);
+}
+
+.teamBx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.teamBx .member{
+    position: relative;
+    background: #000;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamBx .member .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.teamBx .member .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teamBx .member .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 0;
+}
+.teamBx .member:hover .details{
+    opacity: 1;
+
+}
+.teamBx .member .details h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.teamBx .member .details h2 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.contac{
+    background: #000;
+}
+.contac h3,
+.contac p{
+    color: #fff;
+}
+
+.contacForm{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.contacForm form{
+    width: 100%;
+}
+.contacForm .row100{
+    display: flex;
+    width: 100%;
+}
+
+.contacForm .row100 .inputBx50{
+    width: 50%;
+    margin: 0 20px;
+}
+.contacForm .row100 .inputBx100{
+    width: 100%;
+    margin: 0 20px;
+}
+.contacForm .row100 input,
+.contacForm .row100 textarea{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 20px 0;
+    resize: none;
+
+}
+.contacForm .row100 textarea{
+    height: 100px;
+}
+.contacForm .row100 input::placeholder,
+.contacForm .row100 textarea::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+.contacForm .row100 input[type="submit"]{
+    max-height: property;
+    max-width: property;
+    max-width: 100px;
+    
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.sci {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+.sci ul{
+    display: flex;
+}
+.sci ul li{
+    list-style: none;
+}
+.sci ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 30px;
+    
+}
+.sci ul li a img{
+    filter: invert(1);
+    max-width: 40px;
+}
+.sci ul li a:hover img{
+    opacity: 0.5;
+}
+
+.copyright a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle{
+    display: none;
+}
+
+
+
+
+@media (max-width: 992px){
+    /* 
+    .toggle{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    } 
+    .toggle:before{
+        content: '';
+        position: absolute;
+        top: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow:  0 10px 0 #fff;
+        transform: 0.5s;
+    }
+    .toggle:after{
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        
+        transform: 0.5s;
+    }
+    header{
+        padding: 5px 50px;
+        background: #fff;
+    }
+    
+    */
+    header{
+        position:sticky;
+    }
+
+    header .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav{
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+    
+    header a{
+        padding: 5px 12px;
+    }
+
+    .banner{
+        background-position: center;
+    }
+    .banner h2{
+        font-size: 60px;
+        padding: 0 50px;
+    }
+    .sec{
+        padding: 100px 50px 50px 50px;
+    }
+    .services .box{
+        width: 100%;
+    }
+    .stats{
+        padding-top: 250px;
+    }
+    .row100{
+        flex-direction: column;
+    }
+    .contacForm.row100.inputBx50,
+    .contacForm.row100.inputBx100{
+        width: 100%;
+        margin: 0;
+    }
+    .sci ul li a img{
+        font-size: 24px;
+    }
+}
