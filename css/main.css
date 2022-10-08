@@ -11,15 +11,20 @@ html {
   scroll-behavior: smooth; }
 
 header {
-  background-color: #fff;
+  background-color: #166666;
   position: fixed;
   width: 100%; }
 
+.logo img {
+  display: flex;
+  height: 112px;
+  border-radius: 5%; }
+
 header .logo {
   margin: 0;
-  padding: 25px 30px;
+  padding: 5px 10px;
   font-weight: bold;
-  color: #f11515;
+  color: #fff;
   font-size: 1.6em; }
 
 header .container {
@@ -35,13 +40,13 @@ header nav {
   padding-right: 20px; }
 
 header a {
-  padding: 25px 40px;
+  padding: 50px 30px;
   text-decoration: none;
   font-weight: bold;
-  color: black; }
+  color: #fff; }
 
 header a:hover {
-  color: #f11515; }
+  color: #82f5f5; }
 
 /* 
 header{
@@ -120,10 +125,10 @@ header.sticky ul li a{
   line-height: 1em; }
 
 .banner h2 span {
-  color: #f11515; }
+  color: #82f5f5; }
 
 .sec {
-  background: #fff;
+  background: #166666;
   padding: 100px;
   min-height: 100vh;
   display: flex;
@@ -142,20 +147,25 @@ header.sticky ul li a{
 .h3General {
   font-size: 50px;
   font-weight: 200;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #fff; }
 
 p {
   position: static;
   font-size: 18px;
   font-weight: 300;
   margin-bottom: 20px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  color: #fff; }
+
+.carta {
+  color: #000; }
 
 .btn {
   position: static;
   display: inline-block;
   padding: 10px 30px;
-  background: #000;
+  background: black;
   text-decoration: none;
   color: #fff; }
 
@@ -225,7 +235,7 @@ p {
 
 .workBx .brand {
   position: static;
-  background: #f11515;
+  background: url(../img/fondo3.jpg);
   min-height: 300px;
   width: 250px;
   margin: 0 auto;
@@ -238,7 +248,7 @@ p {
 
 .workBx .brand a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.4);
+  color: #000;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px; }
@@ -314,7 +324,7 @@ p {
   color: #fff; }
 
 .contacForm {
-  position: relative;
+  position: static;
   max-width: 800px;
   margin: 0 auto;
   display: flex; }
