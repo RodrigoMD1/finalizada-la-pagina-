@@ -34,7 +34,6 @@ nav ul li {
 
 nav ul li a {
   position: relative;
-  text-decoration: none;
   font-size: 20px;
   padding: 7px 30px;
   text-decoration: none;
@@ -45,7 +44,7 @@ nav ul li a {
 header a:hover {
   color: #82f5f5; }
 
-.logo img {
+.nav__logo img {
   height: 112px;
   float: left;
   padding: 8px;
@@ -55,125 +54,16 @@ header a:hover {
 nav.black {
   background: #166666; }
 
-.checkbtn {
+.nav__label {
   float: right;
   line-height: 80px;
   margin-right: 40px;
   cursor: pointer;
   display: none; }
 
-#check {
+#menu {
   display: none; }
 
-/* 
-header{
-     background:url(../img/fondo2.jpg.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    
-}
-.logo img{
-   display: flex;
-   height: 112px;
-   border-radius: 5%;
-
-    
-}
-
-header .logo{
-    margin: 0;
-    padding: 5px 10px;
-    font-weight: bold;
-    color: #fff;
-    font-size: 1.6em;
-}
-
-header .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-header nav{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    padding-bottom: 0;
-    padding-right: 20px;
-
-}
-
-header a{
-    padding: 50px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-}
-
-header a:hover{
-    color: #82f5f5;
-}
-*/
-/* 
-header{
-   position: fixed;
-   top: 0; 
-   left: 0;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 40px 100px;
-   z-index: 1000;
-   transition: 0.6s;
-}
-
-header.sticky{
-    padding: 5px 100px;
-    background: #fff;
-    border-bottom: 1px solid (0,0,0,.1);
-
-}
-
-header .logo{
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-
-}
-
-header ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-header ul li{
-    position: relative;
-    list-style: none;
-}
-header ul li a{
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: 300;
-    transition: 0.6s;
-}
-
-header.sticky .logo,
-header.sticky ul li a{
-    color: #000;
-}
-*/
 .banner {
   position: static;
   width: 100%;
@@ -470,87 +360,43 @@ p {
   color: #fff;
   text-decoration: none; }
 
-.toggle {
-  display: none; }
-
 @media (max-width: 992px) {
-  /* 
-    .toggle{
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-    } 
-    .toggle:before{
-        content: '';
-        position: absolute;
-        top: 4px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        z-index: 1;
-        box-shadow:  0 10px 0 #fff;
-        transform: 0.5s;
-    }
-    .toggle:after{
-        content: '';
-        position: absolute;
-        bottom: 4px;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        z-index: 1;
-        
-        transform: 0.5s;
-    }
-    header{
-        padding: 5px 50px;
-        background: #fff;
-    }
-    
-    */
-  .checkbtn {
-    display: block; }
-  .menumobile {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    left: -100%;
-    text-align: center;
-    transition: all .5s; }
-  nav ul li {
+  nav {
+    background: #166666; }
+  .nav__label {
     display: block;
-    margin: 50px 0;
-    line-height: 30px; }
-  nav ul li a {
-    font-size: 20px; }
-  li a:hover, li a.active {
-    background: none;
-    color: darkblue; }
-  #check:checked ~ ul {
-    left: 0; }
-  /* 
-    header{
-        position:relative;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .container{
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    header nav {
-        flex-direction: column;
-        padding-bottom: 25px;
-    }
-    
-    header a{
-        padding: 5px 12px;
-    }
-  */
+    cursor: pointer;
+    position: relative; }
+  .nav__menu {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background: #166666;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out; }
+  .nav__menu ul li a {
+    color: #fff;
+    grid-auto-flow: column;
+    text-decoration: none;
+    line-height: 140px;
+    font-weight: bold;
+    padding: auto;
+    padding-left: 50px; }
+  .nav__input:checked + .nav__menu {
+    clip-path: circle(100% at center); }
+  .contacForm .row100 input,
+  .contacForm .row100 textarea {
+    position: static; }
+  .sci ul li a img {
+    position: static; }
+  .teamBx {
+    position: static; }
   .banner {
     background-position: center; }
   .banner h2 {
@@ -567,6 +413,4 @@ p {
   .contacForm.row100.inputBx50,
   .contacForm.row100.inputBx100 {
     width: 100%;
-    margin: 0; }
-  .sci ul li a img {
-    font-size: 24px; } }
+    margin: 0; } }
