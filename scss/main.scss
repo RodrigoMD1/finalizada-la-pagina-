@@ -12,7 +12,7 @@ body{
 html{
     scroll-behavior: smooth;
 }
-
+/* header*/
 header{
     background:url(../img/fondo2.jpg.jpg);
     background-size: cover;
@@ -23,7 +23,8 @@ header{
 nav{
     position: fixed;
     width: 100%;
-    height: 80px;
+    height: 90px;
+    z-index: 1;
     
 }
 nav ul{
@@ -48,30 +49,31 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     color: #fff;
-    line-height: 50px;
+    line-height: 60px;
 
 }
 header a:hover{
-    color: #82f5f5;
+    color: #00BCD4 ;
 }
 .nav__logo img{
-    height: 112px;
+    height: 97px;
     float: left;
     padding: 8px ;
     position: sticky;
     border-radius: 15%;
     
+    
 }
 
 
 nav.black{
-    background: #166666;
+    background: #0097A7;
 }
 
 
 .nav__label{
     float: right;
-    line-height: 80px;
+    line-height: 95px;
     margin-right: 40px;
     cursor: pointer;
     display: none;
@@ -103,11 +105,16 @@ nav.black{
     line-height: 1em;
 }
 .banner h2 span{
-    color: #82f5f5;
+    color: #00BCD4 ;
 }
+/* /header*/
 
+
+
+
+/* about*/
 .sec {
-    background: #166666 ;
+    background: #0097A7 ;
     padding: 100px;
     min-height: 100vh;
     display: flex;
@@ -153,7 +160,11 @@ p{
     text-decoration: none;
     color: #fff;
 }
+/* about*/
 
+
+
+/* servicios*/
 .services{
     position: static;
     display: grid;
@@ -186,7 +197,13 @@ p{
     font-weight: 700;
 
 }
+/* servicios*/
 
+
+
+
+
+/* stats*/
 .stats{
     background: #000;
     padding-top: 250px;
@@ -219,7 +236,11 @@ p{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+/* stats*/
 
+
+
+/* portfolio*/
 .workBx{
     position: static;
     display: grid;
@@ -255,17 +276,19 @@ p{
 .workBx .brand:hover a{
     color: rgba(255,255,255,1);
 }
+/* portfolio*/
 
-.teamBx{
+
+
+/* equipo*/
+.teamBx {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
     max-width: 100%;
-    margin-top: 40px;
-}
-
-.teamBx .member{
+    margin-top: 40px; }
+  .teamBx .member {
     position: relative;
     background: #000;
     min-height: 300px;
@@ -273,24 +296,21 @@ p{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-.teamBx .member .imgBx{
+    align-items: center; }
+  .teamBx .member .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .teamBx .member .imgBx img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-}
-.teamBx .member .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.teamBx .member .details{
+    object-fit: cover; }
+  .teamBx .member .details {
     position: absolute;
     top: 0;
     left: 0;
@@ -301,24 +321,24 @@ p{
     align-items: center;
     background: #000;
     transition: 0.2s;
-    opacity: 0;
-}
-.teamBx .member:hover .details{
-    opacity: 1;
-
-}
-.teamBx .member .details h2{
+    opacity: 0; }
+  .teamBx .member:hover .details {
+    opacity: 1; }
+  .teamBx .member .details h2 {
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
-    letter-spacing: 1px;
-}
-.teamBx .member .details h2 span{
+    letter-spacing: 1px; }
+  
+  .teamBx .member .details h2 span {
     display: block;
     font-size: 12px;
-    font-weight: 300;
-}
+    font-weight: 300; }
+  
+/* equipo*/
 
+
+/* contacto*/
 .contac{
     background: #000;
 }
@@ -382,7 +402,6 @@ p{
     cursor: pointer;
     font-weight: 500;
 }
-
 .sci {
     position: relative;
     display: flex;
@@ -404,7 +423,7 @@ p{
 }
 .sci ul li a img{
     filter: invert(1);
-    max-width: 40px;
+    max-width: 30px;
 }
 .sci ul li a:hover img{
     opacity: 0.5;
@@ -414,6 +433,10 @@ p{
     color: #fff;
     text-decoration: none;
 }
+/* contacto*/
+
+
+
 
 
 
@@ -421,9 +444,11 @@ p{
 
 
 @media (max-width: 992px){
-
+/* nav*/
 nav{
-    background: #166666;
+    background: #0097A7;
+    z-index: 1;
+    height: 95px;
 }
    
 
@@ -439,7 +464,7 @@ nav{
         position: fixed;
         top: 80px;
         bottom: 0;
-        background: #166666;
+        background: #0097A7;
         width: 100%;
         left: 0;
         display: flex;
@@ -453,34 +478,38 @@ nav{
     .nav__menu ul li a{
         color: #fff;
         grid-auto-flow: column;
-        
         text-decoration: none;
-        line-height: 140px;
+        line-height: 110px;
         font-weight: bold;
         padding: auto;
-        padding-left: 50px;
+        padding-left: 120px;
     }
     .nav__input:checked + .nav__menu{
         clip-path:  circle(100% at center);
     }
-
+    .nav__logo img{
+        height: 95px;
+        float: left;
+        padding: 7px ;
+        position: sticky;
+        border-radius: 15%;
+        z-index: 1;
+    }
+/* /nav*/
 
     .contacForm .row100 input,
     .contacForm .row100 textarea{
         position: static;
     }
 
-    .sci ul li a img{
+    .sci ul li a {
         position: static;
+        display: flex;
+        align-items:center;
     }
  .teamBx {
-    position: static;
+    position: relative;
 }
-
-
-
-
-
 
     .banner{
         background-position: center;
